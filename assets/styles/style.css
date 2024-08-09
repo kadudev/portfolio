@@ -1,0 +1,424 @@
+@import url('https://fonts.cdnfonts.com/css/there-must-be');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 55px;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    cursor: pointer;
+    height: 25px;
+}
+
+.menu-icon div {
+    width: 38px;
+    height: 3px;
+    color: white;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+
+.logo {
+    font-family: 'There Must Be', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 23px;
+    font-family: 'There Must Be', sans-serif;
+}
+
+.logo img {
+    width: 32px;
+}
+
+#KA {
+    color: white;
+}
+
+#KA:hover {
+    color: #B6C7AA;
+}
+
+#DU {
+    color: #B6C7AA;
+}
+
+#DU:hover {
+    color: white;
+}
+
+.line-header {
+    border-top: solid #B6C7AA 2px;
+    width: 100%;
+    z-index: 9;
+}
+
+nav.hidden {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(182, 199, 170, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 194px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: JetBrains Mono;
+    z-index: 10;
+}
+
+a{
+    text-decoration: none;
+}
+
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    border-bottom: 2px solid white;
+}
+
+#li-curriculo {
+    border-bottom: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.texto-sobremim{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*.info-projeto p{
+    padding-left: 10%;
+    padding-right: 10%;
+}*/
+
+nav ul li a:hover {
+    color: #B6C7AA;
+}
+
+
+.cover {
+    background-image: url(../img/cover-mobile.png);
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.cover h3, .cover h4, .cover h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: JetBrains Mono;
+}
+
+.cover h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cover h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sect-sobremim {
+    font-family: JetBrains Mono;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    color: #B6C7AA;
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0 5px;
+}
+
+.sect-line {
+    width: 75%;
+    height: 2px;
+    background-color: #B6C7AA;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    font-family: JetBrains Mono;
+    color: white;
+}
+
+.p-sobremim{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+    border-bottom: solid 3px #B6C7AA;
+    text-align: center;
+    justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+
+}
+
+.skill p{
+    font-size: 7px;
+    text-align: center;
+}
+
+.img-skill img{
+   display: inline-block;
+   max-width: 100%;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4{
+    margin: 5px;
+    color: #B6C7AA;
+    font-family: JetBrains Mono;
+    text-align: center;
+}
+
+.retangle-projeto{
+    display: flex;
+    width: 281px;
+    height: 200px;
+    background-color: #B6C7AA;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.retangle-projeto img{
+    max-width: 266px;
+}
+
+.infos-curriculo{
+    text-align: center;
+}
+.retangle-image{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.h4curriculo{
+    margin-top: 0;
+}
+
+p{
+    text-align: justify;
+}
+
+.info-projeto{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    color: #B6C7AA;
+    border: solid #B6C7AA 2px;
+    border-radius: 30px;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.skill-projeto{
+    width: 30px;
+    height: 30px;
+    background-color: #2C2C2C;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.skill-projeto img{
+    max-width: 17px;
+}
+
+.skills-projeto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;;
+}
+
+.redes a{
+    margin: 8px;
+}
+
+.sect-contato p{
+    color: #B6C7AA;
+    font-weight: bold;
+}
+
+.contato a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contato{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contato img{
+    margin-right: 5px;
+}
+
+footer{
+    border-top: solid 2px #B6C7AA;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer p{
+    color: #B6C7AA;
+    font-size: 9px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+select::-webkit-scrollbar {
+    background-color: #151515; /* cor de fundo da barra de rolagem */
+    width: 12px; /* largura da barra de rolagem */
+}
+select::-webkit-scrollbar-thumb {
+    background-color: #B6C7AA; /* cor do botão de arrasto */
+    border-radius: 6px; /* borda arredondada do botão de arrasto */
+}
+
+::-webkit-scrollbar {
+    background-color: #2C2C2C; /* cor de fundo da barra de rolagem */
+    width: 12px; /* largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #B6C7AA; /* cor do botão de arrasto */
+    border-radius: 6px; /* borda arredondada do botão de arrasto */
+}
+
+::-webkit-scrollbar-button {
+    display: none; /* oculta os botões de seta */
+}
+
+.infos-topo{
+    display: flex;
+    flex-direction: column;
+}
+
+.p-c{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.list-idioma{
+    color: white;
+    padding-right: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
